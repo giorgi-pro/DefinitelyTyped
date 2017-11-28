@@ -23,3 +23,8 @@ c.result({ type: 'blob' }).then(blob => {
 });
 
 c.destroy();
+
+const cropData = c.get();
+
+const points = cropData.points;
+const zoom = cropData.zoom;

@@ -27,6 +27,12 @@ export default class Croppie {
     setZoom(zoom: number): void;
 
     destroy(): void;
+
+    get(): {
+
+        points: string[],
+        zoom: number
+    };
 }
 
 export type CropType = 'square' | 'circle';
